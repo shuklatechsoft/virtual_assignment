@@ -1,4 +1,3 @@
-# virtual_assignment
 let express=require('express');
 let app=express();
 let cors=require('cors');
@@ -98,7 +97,7 @@ app.get("/forgetpassword",(req,res)=>
             let options={
                 from: '"Fred Foo"', // sender address
                 to: email, // list of receivers
-               subject: "Forget Password Link", // Subject line
+               subject: "Forget Password Link✔", // Subject line
                html: `Hello user , <br/>
                  Please click on the link for forget password <a href="${link}">Click Here</a>` // html body
                  }
@@ -123,4 +122,4 @@ app.listen(PORT,()=>
 {
     console.log(`Work on ${PORT}`);
 })
-
+})
